@@ -8,7 +8,7 @@ public class TestRunner {
 
     @Karate.Test
     Karate getAPITest(){
-        return Karate.run("test").relativeTo(getClass()).tags("@wip");
+        return Karate.run("testjsonpath").relativeTo(getClass()).tags("@jsonpath");
     }
 
 }
