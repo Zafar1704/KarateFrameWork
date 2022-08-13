@@ -8,7 +8,6 @@
 #     And json response data is as expected
 #     */
 
-  @wip
   Feature: Spartan test with query Param
 
     Background:
