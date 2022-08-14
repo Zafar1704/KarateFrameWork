@@ -32,5 +32,5 @@ Feature: Task3
       And match id contains [94, 98,91, 81]
       And def name = $..name
       And match name contains ['Jocelin', 'Georgianne', 'Catie', 'Marylee','Elita']
-      And match karate.lowerCase(name) contains 'e'
+      And match each name == "#? _.contains('e') || _.contains('E') "
 
