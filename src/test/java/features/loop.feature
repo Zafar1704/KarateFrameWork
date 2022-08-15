@@ -32,5 +32,31 @@ Feature: Task3
       And match id contains [94, 98,91, 81]
       And def name = $..name
       And match name contains ['Jocelin', 'Georgianne', 'Catie', 'Marylee','Elita']
-      And match karate.lowerCase(name) contains 'e'
+      #And def containsEore = function(x){return x.contains('e') || x.contains('E')}
+      #And match each name == '#? containsEore(_)'
+      And match each name == "#? _.contains('e') ||_.contains('E') "
+
+
+
+
+
+
+  #* match each data.foo contains { baz: "#? _ != 'z'" }
+
+  #* match date == { month: '#? _ > 0 && _ < 13' }
+
+
+
+
+
+  #* def nameStartsWith = function(x) { return x.foo.charAt(0) == fooStartWithChar || x.bar.charAt(0) == barStartWithChar}
+  #And match each response == '#? nameStartsWith(_)'
+#Scenario: karate forEach operation on lists
+#    * def res = []
+#    * def fun = function(x){ karate.appendTo(res, x * x) }
+#    * def list = [1, 2, 3]
+#    * karate.forEach(list, fun)
+#    * match res == [1, 4, 9]
+
+
 
