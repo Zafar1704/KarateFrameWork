@@ -12100,3 +12100,235 @@ src/test/java/features/classTask3.feature:35
 }
  
 18:39:38.477 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/features/classTask3.feature
+16:50:50.204 [main]  INFO  com.intuit.karate - Karate version: 1.2.0.RC4
+16:50:50.693 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1660510250692
+16:50:50.737 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 22
+16:50:52.761 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://34.238.241.255:8000/api/spartans/search?nameContains=e&gender=Female
+1 > Accept: application/json
+1 > Host: 34.238.241.255:8000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:50:53.034 [main]  DEBUG com.intuit.karate - response time in milliseconds: 269
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Sun, 14 Aug 2022 20:50:30 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"content":[{"id":4,"name":"Paige","gender":"Female","phone":3786741487},{"id":5,"name":"Blythe","gender":"Female","phone":3677539542},{"id":9,"name":"Florrie","gender":"Female","phone":1702025787},{"id":10,"name":"Lorenza","gender":"Female","phone":3312820936},{"id":13,"name":"Jaimie","gender":"Female","phone":7842554879},{"id":15,"name":"Meta","gender":"Female","phone":1938695106},{"id":19,"name":"Bunnie","gender":"Female","phone":7662992732},{"id":26,"name":"Correy","gender":"Female","phone":7823876031},{"id":27,"name":"Jeanelle","gender":"Female","phone":6662999903},{"id":29,"name":"Dorelle","gender":"Female","phone":6687391932},{"id":30,"name":"Melania","gender":"Female","phone":8916944276},{"id":31,"name":"Maressa","gender":"Female","phone":2018031787},{"id":32,"name":"Tessie","gender":"Female","phone":9545879168},{"id":39,"name":"Eveleen","gender":"Female","phone":1362642898},{"id":42,"name":"Atlante","gender":"Female","phone":4579688654},{"id":45,"name":"Heddie","gender":"Female","phone":1271425843},{"id":46,"name":"Delora","gender":"Female","phone":4115324496},{"id":50,"name":"Jennica","gender":"Female","phone":6986436734},{"id":53,"name":"Berna","gender":"Female","phone":2072918455},{"id":55,"name":"Karmen","gender":"Female","phone":5052029186},{"id":57,"name":"Freida","gender":"Female","phone":5712679899},{"id":60,"name":"Elisabeth","gender":"Female","phone":8165224005},{"id":67,"name":"Janette","gender":"Female","phone":9887020445},{"id":69,"name":"Elinor","gender":"Female","phone":3161765672},{"id":71,"name":"Collen","gender":"Female","phone":9614634242},{"id":75,"name":"Leland","gender":"Female","phone":9672110769},{"id":77,"name":"Stevana","gender":"Female","phone":1459126818},{"id":80,"name":"Jocelin","gender":"Female","phone":4299058649},{"id":81,"name":"Georgianne","gender":"Female","phone":9594130239},{"id":82,"name":"Catie","gender":"Female","phone":4758237746},{"id":87,"name":"Fenelia","gender":"Female","phone":6475942543},{"id":91,"name":"Jaquenetta","gender":"Female","phone":7338210388},{"id":94,"name":"Marylee","gender":"Female","phone":6385380284},{"id":98,"name":"Elita","gender":"Female","phone":1042902741}],"totalElement":34}
+
+16:50:53.187 [main]  INFO  com.intuit.karate - [print] {
+  "content": [
+    {
+      "id": 4,
+      "name": "Paige",
+      "gender": "Female",
+      "phone": 3786741487
+    },
+    {
+      "id": 5,
+      "name": "Blythe",
+      "gender": "Female",
+      "phone": 3677539542
+    },
+    {
+      "id": 9,
+      "name": "Florrie",
+      "gender": "Female",
+      "phone": 1702025787
+    },
+    {
+      "id": 10,
+      "name": "Lorenza",
+      "gender": "Female",
+      "phone": 3312820936
+    },
+    {
+      "id": 13,
+      "name": "Jaimie",
+      "gender": "Female",
+      "phone": 7842554879
+    },
+    {
+      "id": 15,
+      "name": "Meta",
+      "gender": "Female",
+      "phone": 1938695106
+    },
+    {
+      "id": 19,
+      "name": "Bunnie",
+      "gender": "Female",
+      "phone": 7662992732
+    },
+    {
+      "id": 26,
+      "name": "Correy",
+      "gender": "Female",
+      "phone": 7823876031
+    },
+    {
+      "id": 27,
+      "name": "Jeanelle",
+      "gender": "Female",
+      "phone": 6662999903
+    },
+    {
+      "id": 29,
+      "name": "Dorelle",
+      "gender": "Female",
+      "phone": 6687391932
+    },
+    {
+      "id": 30,
+      "name": "Melania",
+      "gender": "Female",
+      "phone": 8916944276
+    },
+    {
+      "id": 31,
+      "name": "Maressa",
+      "gender": "Female",
+      "phone": 2018031787
+    },
+    {
+      "id": 32,
+      "name": "Tessie",
+      "gender": "Female",
+      "phone": 9545879168
+    },
+    {
+      "id": 39,
+      "name": "Eveleen",
+      "gender": "Female",
+      "phone": 1362642898
+    },
+    {
+      "id": 42,
+      "name": "Atlante",
+      "gender": "Female",
+      "phone": 4579688654
+    },
+    {
+      "id": 45,
+      "name": "Heddie",
+      "gender": "Female",
+      "phone": 1271425843
+    },
+    {
+      "id": 46,
+      "name": "Delora",
+      "gender": "Female",
+      "phone": 4115324496
+    },
+    {
+      "id": 50,
+      "name": "Jennica",
+      "gender": "Female",
+      "phone": 6986436734
+    },
+    {
+      "id": 53,
+      "name": "Berna",
+      "gender": "Female",
+      "phone": 2072918455
+    },
+    {
+      "id": 55,
+      "name": "Karmen",
+      "gender": "Female",
+      "phone": 5052029186
+    },
+    {
+      "id": 57,
+      "name": "Freida",
+      "gender": "Female",
+      "phone": 5712679899
+    },
+    {
+      "id": 60,
+      "name": "Elisabeth",
+      "gender": "Female",
+      "phone": 8165224005
+    },
+    {
+      "id": 67,
+      "name": "Janette",
+      "gender": "Female",
+      "phone": 9887020445
+    },
+    {
+      "id": 69,
+      "name": "Elinor",
+      "gender": "Female",
+      "phone": 3161765672
+    },
+    {
+      "id": 71,
+      "name": "Collen",
+      "gender": "Female",
+      "phone": 9614634242
+    },
+    {
+      "id": 75,
+      "name": "Leland",
+      "gender": "Female",
+      "phone": 9672110769
+    },
+    {
+      "id": 77,
+      "name": "Stevana",
+      "gender": "Female",
+      "phone": 1459126818
+    },
+    {
+      "id": 80,
+      "name": "Jocelin",
+      "gender": "Female",
+      "phone": 4299058649
+    },
+    {
+      "id": 81,
+      "name": "Georgianne",
+      "gender": "Female",
+      "phone": 9594130239
+    },
+    {
+      "id": 82,
+      "name": "Catie",
+      "gender": "Female",
+      "phone": 4758237746
+    },
+    {
+      "id": 87,
+      "name": "Fenelia",
+      "gender": "Female",
+      "phone": 6475942543
+    },
+    {
+      "id": 91,
+      "name": "Jaquenetta",
+      "gender": "Female",
+      "phone": 7338210388
+    },
+    {
+      "id": 94,
+      "name": "Marylee",
+      "gender": "Female",
+      "phone": 6385380284
+    },
+    {
+      "id": 98,
+      "name": "Elita",
+      "gender": "Female",
+      "phone": 1042902741
+    }
+  ],
+  "totalElement": 34
+}
+ 
+16:50:54.284 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/features/classTask3.feature
