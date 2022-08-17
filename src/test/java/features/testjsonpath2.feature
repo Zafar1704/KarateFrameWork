@@ -19,11 +19,12 @@ Feature: Jsonpath
     Given url 'http://54.211.225.58:1000/ords/hr'
     And path '/countries'
     When method GET
- # Then print response
+    Then print response
     Then def ids = $.items[0]
     And def ids2 = $..country_id
     And print ids
     And print ids2
+    And def data2 = $.items[?(@.manager_id==100)]
 
     #Then def data = $.items[0]
     #Then def data2 = $.items[?(@.manager_id==100)]

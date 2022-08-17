@@ -48,15 +48,3 @@ Feature: Task3
 
 
 
-
-  #* def nameStartsWith = function(x) { return x.foo.charAt(0) == fooStartWithChar || x.bar.charAt(0) == barStartWithChar}
-  #And match each response == '#? nameStartsWith(_)'
-#Scenario: karate forEach operation on lists
-#    * def res = []
-#    * def fun = function(x){ karate.appendTo(res, x * x) }
-#    * def list = [1, 2, 3]
-#    * karate.forEach(list, fun)
-#    * match res == [1, 4, 9]
-
-
-
